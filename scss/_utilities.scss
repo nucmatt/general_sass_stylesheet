@@ -7,7 +7,7 @@
 
 .card {
     padding: 1rem;
-    border: $card-border-color 1px dotted;
+    border: $border-color 1px dotted;
     margin: 0.7rem 0;
 }
 
@@ -24,17 +24,98 @@
     padding: 0.2rem 0.7rem;
     text-align: center;
     margin: 0.3rem;
-    background: $light-color;
-    color: $text-color;
+    @include set-background($light-color);
     border-radius: 5px;
+
+    &-primary {
+        @include set-background($primary-color);
+    }
+
+    &-light {
+        @include set-background($light-color);
+        border: $border-color solid 1px;
+    }
+
+    &-dark {
+        @include set-background($dark-color);
+    }
+
+    &-danger {
+        @include set-background($danger-color);
+    }
+
+    &-success {
+        @include set-background($success-color);
+    }
+
+    &-white {
+        @include set-background(#fff);
+        border: $border-color solid 1px;
+    }
 }
 
 .alert {
     padding: 0.7rem;
     margin: 1rem 0;
     opacity: 0.9;
-    background: $light-color;
-    color: $text-color;
+    @include set-background($light-color);
+
+    &-primary {
+        @include set-background($primary-color);
+    }
+
+    &-light {
+        @include set-background($light-color);
+    }
+
+    &-dark {
+        @include set-background($dark-color);
+    }
+
+    &-danger {
+        @include set-background($danger-color);
+    }
+
+    &-success {
+        @include set-background($success-color);
+    }
+
+    &-white {
+        @include set-background(#fff);
+        border: $border-color solid 1px;
+    }
+}
+
+.bg {
+    &-primary {
+        @include set-background($primary-color);
+    }
+
+    &-light {
+        @include set-background($light-color);
+        border: $border-color solid 1px;
+    }
+
+    &-dark {
+        @include set-background($dark-color);
+    }
+
+    &-danger {
+        @include set-background($danger-color);
+    }
+
+    &-success {
+        @include set-background($success-color);
+    }
+
+    &-white {
+        @include set-background(#fff);
+        border: $border-color solid 1px;
+    }
+}
+
+.round-img {
+    border-radius: 50%;
 }
 
 // Margin and padding classes

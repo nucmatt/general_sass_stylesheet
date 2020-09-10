@@ -1,3 +1,4 @@
+/* General Utility Classes */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -136,6 +137,7 @@
   border-radius: 50%;
 }
 
+/* Margin and padding classes */
 .m {
   margin: 0.5rem;
 }
@@ -200,6 +202,7 @@
   margin: 3rem;
 }
 
+/* Grid */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -289,6 +292,7 @@
   border: #ccc solid 1px;
 }
 
+/* Text Styles */
 .x-large {
   font-size: 4rem;
   line-height: 1.2;
@@ -326,6 +330,7 @@
   color: #333333;
 }
 
+/* Forms */
 .form-container {
   max-width: 500px;
   margin: 2rem auto;
@@ -351,6 +356,54 @@
   display: block;
   margin-top: 0.3rem;
   color: #888;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  border-bottom: solid 1px #003699;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #f4f4f4;
+}
+
+.navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+/* Animations */
+.item-enter {
+  opacity: 0;
+}
+
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
 }
 
 * {
@@ -424,4 +477,42 @@ table td {
 
 table th {
   background: #f4f4f4;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  /* Text styles */
+  .x-large {
+    font-size: 3rem;
+  }
+  .large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  /* Navbar */
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .navbar h1 {
+    margin-bottom: 0.6rem;
+  }
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
 }

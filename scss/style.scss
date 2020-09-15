@@ -1,16 +1,4 @@
-// To use this scss stylesheet in a project:
-// 1. Install sass to your project folder using npm install -g sass. Installing globally gives you access to the sass command, used in step 3.
-// 2. Copy the scss folder into your project where you want the files to be held.
-// 3. Enter the following command to compile the scss into a usable css file: sass --watch sassfilelocation.scss cssfileoutputlocation. (For example, if your file structure is project_folder/css and project_folder/scss/style.scss the command is sass --watch scss/style.scss css/style.css) Now sass will watch the style.scss folder for changes and automatically output this to a style.css in your css folder. (note this command will create the style.css file itself in the css folder you created. This style.css file is NOT destroyed once you stop the watch command.) -OR-
-// 4. With VSCode extension Live Sass Compiler installed simply edit the settings for format and map. Set map to false if you don't want to use a source map. There are various formats you can use in the format setting. Primarily you will be interested in the "savePath": setting. This is where you will enter the path you want the regular css file to be saved to by the extension. (Note: The file path is relative to the root folder where sass was installed, generally the project folder).
-
 @import 'config';
-@import 'utilities';
-@import 'buttons';
-@import 'text-styles';
-@import 'forms';
-@import 'navbar';
-@import 'animations';
 
 * {
 	box-sizing: border-box;
@@ -86,5 +74,12 @@ table {
 		background: $light-color;
 	}
 }
+
+@import 'utilities';
+@import 'buttons';
+@import 'text-styles';
+@import 'forms';
+@import 'navbar';
+@import 'animations';
 
 @import 'mediaqueries';

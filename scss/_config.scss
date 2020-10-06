@@ -10,6 +10,9 @@ $text-color: #333;
 $light-text-color: #fff;
 $form-text-color: #888;
 $border-color: #ccc;
+$border-radius: 10px;
+$element-box-shadow: 1px 1px 10px 2px;
+$btn-box-shadow: 2px 2px 5px;
 
 @mixin set-background($color) {
     background: $color;

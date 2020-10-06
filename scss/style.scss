@@ -63,6 +63,10 @@ textarea {
 	border: 1px solid $border-color;
 }
 
+textarea {
+	resize: none;
+}
+
 table {
 	th,
 	td {
@@ -81,5 +85,6 @@ table {
 @import 'forms';
 @import 'navbar';
 @import 'animations';
+@import 'layout';
 
 @import 'mediaqueries';
